@@ -1,0 +1,9 @@
+The examples in this directory are modifications from the following repository:
+https://github.com/repaper/gratis.git
+
+Be sure to install the appropriate drivers as per the instructions at:
+https://learn.adafruit.com/repaper-eink-development-board-arm-linux-raspberry-pi-beagle-bone-black/overview
+
+You can find more information about the RePaper display here:
+http://repaper.org
+http://www.pervasivedisplays.com/
