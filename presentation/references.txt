@@ -1,0 +1,18 @@
+* Main
+http://www.raspberrypi.org/
+
+
+* Pinouts
+https://www.raspberrypi.org/documentation/usage/gpio/
+http://pinout.xyz/
+
+
+
+* SPI
+http://www.petervis.com/Raspberry_PI/SPI_Serial_Peripheral_Interface/Raspberry_Pi_SPI.html
+http://www.petervis.com/Raspberry_PI/SPI_Serial_Peripheral_Interface/SPI_Serial_Peripheral_Interface_Daisy_Chain.html
+
+
+
+* Sensors
+http://www.modmypi.com/blog/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi

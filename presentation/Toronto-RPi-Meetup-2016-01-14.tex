@@ -1,0 +1,213 @@
+%
+% Toronto-RPi-Meetup-2016-01-14.tex
+% 
+% Copyright (c), 2016 Syed Faisal Akber
+%
+% All references will be noted in a file called references.txt
+%
+\documentclass[slidestop,usepdftitle=false,14pt,table]{beamer}
+\usepackage[accumulated]{beamerseminar}
+\usepackage{beamertexpower}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{transparent}
+
+\usepackage[bars]{beamerthemetree}
+
+\usetheme{Madrid}
+
+% Configure Beamer to use the VMware colours
+\setbeamercolor{structure}{fg=gray}
+\setbeamercolor{example text}{fg=green}
+\setbeamercolor{normal text}{fg=white,bg=black}
+
+% Footline chages and remove navigation symbols
+\setbeamertemplate{footline}[page number]{}
+\beamertemplatenavigationsymbolsempty
+
+% Define title, author and other important information
+\title[Raspberry Pi GPIO]
+      {Using the GPIO interface on the Raspberry Pi}
+%\subtitle{}
+\author[S. F. Akber]{Syed Faisal Akber}
+
+% PDF metadata setup
+\hypersetup{pdftitle=
+  {Using the GPIO interface on the Raspberry Pi},
+  pdfauthor={Syed Faisal Akber}}
+% Since we're using the background image for the template we don't need to 
+% paste the logo everywhere.
+%%%\logo{\includegraphics[height=0.8cm]{vmware.eps}}
+
+% Date of the presentation
+\date{2016-01-14}
+
+\begin{document}
+% Title page
+% Set the background to the title page image
+{
+%  \setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{template-title0.jpg}}
+  \begin{frame}
+    \maketitle
+  \end{frame}
+}
+
+% Insert table of contents (a.k.a. Agenda based upon sections and subsections)
+{
+%  \setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{template-sectiontitle1.jpg}}
+\begin{frame}
+  %  \newslide
+  \tableofcontents
+\end{frame}
+}
+%% Example flow of a slide/frame
+%% \section{A list environment}
+%% \frame{
+%% \begin{slide}
+%% \centerslidesfalse
+%% \frametitle{A list environment}
+
+%% \pause
+%% \stepwise
+%% {%
+%%   \begin{description}
+%%   \item[foo.] \step{bar.}%%   \step{\item[baz.]} \step{qux.}
+%%   \end{description}
+%%   }
+
+%% \end{slide}
+%%}
+
+% Set the default background for each slide.
+%\setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{template-normal.jpg}}
+
+% Start content here
+\section{Introduction}
+\begin{frame}
+\frametitle{Introduction}
+\begin{itemize}
+\item Raspberry Pi has many interfaces
+\item Some we are already familiar with
+\item Today we'll look at P1 (GPIO Interface)
+\item Its basic usage and pointers to more detail
+\end{itemize}
+\end{frame}
+
+\section{P1 - GPIO Header}
+\begin{frame}
+\frametitle{GPIO Pinouts}
+\begin{itemize}
+\item **** add pics here
+\item talk about pintout.xyz ****
+\end{itemize}
+\end{frame}
+
+\section{Simple I/O}
+\begin{frame}
+\frametitle{Simple Output}
+**** simple outputs
+**** add example with LED, python and C
+\end{frame}
+
+\begin{frame}
+\frametitle{Simple Input}
+**** simple inputs
+**** use switch 
+**** talk about pull-up and pull-down resistors
+**** talk about it being already included
+\end{frame}
+
+\section{Pulse-Width Modulation (PWM)}
+\begin{frame}
+\frametitle{Pulse-Width Modulation (PWM)}
+**** uses of PWM
+**** elude to pifm
+\end{frame}
+
+\section{Serial Communications}
+\begin{frame}
+\frametitle{Serial Communications}
+
+
+\end{frame}
+
+
+
+\section{Serial Peripheral Interface (SPI)}
+\begin{frame}
+\frametitle{Serial Peripheral Interface (SPI)}
+
+
+\end{frame}
+
+
+\section{$I^2C$}
+\begin{frame}
+\frametitle{$I^2C$}
+
+
+\end{frame}
+
+
+
+
+\section{Other Topics}
+\begin{frame}
+\frametitle{Scratch}
+**** add links to GPIO version
+\end{frame}
+
+\begin{frame}
+\frametitle{What to do when you're running out of pins!}
+**** Multiplexing
+**** specialized drivers
+**** daisy-chaining
+**** guzunty
+\end{frame}
+
+\begin{frame}
+\frametitle{Common Peripherals}
+\begin{itemize}
+\item **** list all items **** make frame multi-page
+\end{itemize}
+\end{frame}
+
+% Conclusions
+\section{Summary}
+\begin{frame}
+  \frametitle{Summary}
+  \begin{itemize}
+  \item Interfaces
+  \item Pinouts
+  \item Interfacing techniques
+  \item ...
+  \end{itemize}
+\end{frame}
+
+% Questions slide
+{
+%\setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{template-quote2.jpg}}
+\setbeamercolor{structure}{fg=gray}
+\begin{frame}
+  \frametitle{Questions?}
+  \centerslidestrue
+\end{frame}
+}
+
+% References slide
+\frame{
+  \frametitle{References}
+  \bibliographystyle{abbrvnat}
+  \begin{thebibliography}{}
+    \bibitem[]{RPi}
+      \emph{Raspberry Pi}
+      \url{http://www.raspberrypi.org/}
+    \bibitem[]{RPi-GPIO-pinouts}
+      \emph{GPIO: Raspberry Pi Models A and B}
+      \url{https://www.raspberrypi.org/documentation/usage/gpio/}
+  \end{thebibliography}
+}
+
+\end{document}
