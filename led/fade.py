@@ -6,7 +6,7 @@ GPIO.setwarnings(False)
 
 
 ledpin = 18
-freq = 1000
+freq = 50
 GPIO.setup(ledpin, GPIO.OUT)
 pwm = GPIO.PWM(ledpin, freq)
 pwm.start(100)
@@ -16,11 +16,10 @@ try:
     while True:
 	for brightness in range(100):
             pwm.ChangeDutyCycle(brightness)
-            time.sleep(0.5)
+            time.sleep(0.15)
 	for brightness in range(100):
             pwm.ChangeDutyCycle(brightness)
-            time.sleep(0.05)
-        time.sleep(0.5)
-except:
+            time.sleep(0.15)
+except KeyboardInterrupt:
     pwm.stop()
     GPIO.cleanup()        
