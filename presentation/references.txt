@@ -1,11 +1,21 @@
 * Main
 http://www.raspberrypi.org/
+https://github.com/VA3SFA/rpi_hw_demo
 
 
 * Pinouts
 https://www.raspberrypi.org/documentation/usage/gpio/
 http://pinout.xyz/
+http://www.megaleecher.net/sites/default/files/images/raspberry-pi-rev2-gpio-pinout.jpg
+http://scammo.de/wp-content/uploads/2015/02/gpio_pinbelegung.jpg
 
+* Inputs
+http://razzpisampler.oreilly.com/ch07.html
+http://sourceforge.net/p/raspberry-gpio-python/wiki/Inputs/
+
+* PWM
+http://www.rpiblog.com/2012/11/pwm-on-raspberry-pi.html
+http://ozzmaker.com/wp-content/uploads/2013/09/pwm.png
 
 
 * SPI
